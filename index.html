@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"> </script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="font-zelda">
+    <header class="z-[60] sticky top-[0]">
+        <nav class="relative z-[60] flex item-center justify-between backdrop-fillter backdrop-blur-md bg-opacite-40 px-[90px] h-[90px]">
+    <!-- area kiri (logo & menu) -->
+            <div class="flex flex-row items-center gap-[60px]">
+                <img class="h-14 w-auto" src="/images/Navbar/navbar-logo.svg" alt="home"/>
+
+                <ul class="flex flex-row gap-[64px] text-white text-[2rem]">
+                <a class="hover:underline hover:text-[#F3B641]" href="#hero">
+                    Home
+                </a>
+                <a class="hover:underline hover:text-[#F3B641]" href="#aboutme">
+                    About Me
+                </a>
+                <a class="hover:underline hover:text-[#F3B641]" href="#myskills">
+                    My Skills
+                </a>
+                <a class="hover:underline hover:text-[#F3B641]" href="#myexperience">
+                    My Experience
+                </a>
+                </ul>
+            </div>
+    <!-- area kanan(sosmed) -->
+            <div class="flex flex-row items-center gap-3">
+                <div class="flex flex-row items gap-[15px]">
+                    <a class="transition duration-200 ease-in-out hover:grayscale hover:opacitiy-70" href="https://x.com/HMSI_ITS" target="_black">
+                        <img class="w-11" src="/images/Navbar/x-logo.svg" alt="X">
+                    </a>
+                    <a class="transition duration-200 ease-in-out hover:grayscale hover:opacitiy-70" href="https://tiktok.com/HMSI_ITS" target="_black">
+                        <img class="w-11" src="/images/Navbar/tiktok-logo.svg" alt="tiktok">
+                    </a>
+                    <a class="transition duration-200 ease-in-out hover:grayscale hover:opacitiy-70" href="https://Instragram.com/HMSI_ITS" target="_black">
+                            <img class="w-11" src="/images/Navbar/ig-logo.svg" alt="Instragram">
+                        </a>
+                    <a class="transition duration-200 ease-in-out hover:grayscale hover:opacitiy-70" href="https://youtube.com/HMSI_ITS" target="_black">
+                        <img class="w-11" src="/images/Navbar/yt-logo.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-black text-white">
+    <!-- section 1- hero-->
+        <section id="hero" class="bg-[red] text-center py-[100px]">
+            <h1 class="font-zelda text-center text-[128px]">My Portofolio</h1>
+            <p class="px-[100px] text-[32px]">Shinta irdhina nuraini</p>
+        </section>
+    <!-- section 2- about me-->
+        <section id="aboutme" class="py-[100px]">
+            <h2 class="font-zelda text-center text-[80px]">About Me</h2>
+            <p class="px-[100px] text-[32px] text-center">Saya adalah seorang siswi di SMKN 1 Surabaya yang sedang menduduki bangku di kelas 10.
+                Saya memasuki jurusan Rekaya Perangkat Lunak, alasan saya masuk sana d karenakan ingin mempelajari lebih dalam tentang dunia IT.
+                Hobi saya adalah menari, saya mengembangkan hobi saya di sanggar tari.
+            </p>
+        </section>
+    <!-- my skills-->
+        <section id="myskills" class="text-left w-[600px] mx-auto p-[60px]">
+            <h2 class="font-zelda text-center text-[80px] ">My Skills</h2>
+            <div>
+                <h3 class="font-zelda text-[48px]">aku tertarik dengan mata pelajaran</h3>
+                <ul class="text-[32px] list-inside list-disc">
+                    <li>matematika</li>
+                    <li>dpk</li>
+                </ul>
+            </div>
+
+        </section>
+    <!-- my experience-->
+        <section id="myexperience" class="py-[100px]">
+            <div>
+                <h2 class="font-zelda text-[128px] text-white text-shadow-[0_5px_0_#7a3d21] text-center">My Experience</h2>
+                <h3 class="font-zelda text-center text-[80px]">uji coba menambahkan gambar di web</h3>
+                <img src="images/foto1.png" alt="deskipsi foto1">
+                <img src="images/foto2.png" alt="deskipsi foto2">
+                <img src="images/foto3.png" alt="deskipsi foto3">
+                <img src="images/foto4.png" alt="deskipsi foto4">
+            </div>
+        </section>
+
+    </main>
+    <!-- footer -->
+     <footer class="w-full sm:h-[500px] md:h-{350px} lg:h-{600px} bg-[url('images/footer/bg-footer.png')] bg-cover bg-center px-4 py-8 lg:px-[90px] lg:py-[88px] lg:border-t-[20px] lg:border-t-[0_5px_0_#7a3d21] flex justify-center items-center">
+    <!--frame parent-->
+        <div class="flex flex-col sm:w-full sm:h-[440px] md:w-170 lg:w-full lg:h-full 
+                    bg-[url('images/footer/frame-footer-mobile.png')] 
+                    md:bg-[url('images/footer/frame-footer-desktop.png')] bg-center bg-contain bg-no-repeat px-6 py-10 lg:px-[20px] items-center justify-center">
+    <!--navbar-->
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-6 " >
+                    <a class="text-[#c07e4e] hover:text-[#f9dcb4] text-[1.5rem] lg:text-[32px]" href="#home">Home</a>
+                    <a class="text-[#c07e4e] hover:text-[#f9dcb4] text-[1.5rem] lg:text-[32px]" href="#aboutme">About Me</a>
+                    <a class="text-[#c07e4e] hover:text-[#f9dcb4] text-[1.5rem] lg:text-[32px]" href="#myskills">My Skills</a>
+                    <a class="text-[#c07e4e] hover:text-[#f9dcb4] text-[1.5rem] lg:text-[32px]" href="#myexperience">My Experience</a>
+            </div>
+    <!--copyright-->
+                <p class="font-times font-bold text-[#f9dcb4] text-[15px] lg:text-[20px] mt-4">&copy; SIMETRI HMSI ITS 2026</p>
+        </div>
+     </footer>
+</body>
+</html>
